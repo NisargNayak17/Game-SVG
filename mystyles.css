@@ -1,0 +1,139 @@
+/* 	
+		This file illustrates the styles for the page "index.html" and 
+		it also represents the responsive design for the phone and desktop
+		as well.
+		
+		@Author: Nisarg Nayak
+		
+	*/
+	
+body{
+	background-image: url("images/R.jfif");
+}
+.gridcontainer{
+	display:grid;
+	grid-template-columns: 50% 50%; 
+}
+.svgcontainer{
+	grid-column:1;
+	grid-row:1;
+}
+.controllers{
+	grid-column:2;
+	grid-row:1;
+}
+svg{
+	display:block;
+	margin:auto;
+}
+.buttons{
+
+	margin:auto;
+	display:inline;
+	justify-content:center;
+	background-color:red;
+	font-family: sans-serif;
+	font-size:2.0em;
+	font-weight:bold;
+	border:5px solid black;
+	border-radius:30px;
+}
+
+.buttons:hover{
+	background-color:yellow;
+}
+#score{
+	text-align:center;
+	color:white;
+	background-color:yellow;
+}
+#stop:hover{
+	background-color:orange;
+}
+ol{
+	color:white;
+	background-color:grey;
+	width:75%;
+	font-family:Times new Roman;
+	font-size:1em;
+	margin-bottom:40px;
+	
+	}
+.instruction{
+	color:blue;
+	font-family:sans-serif;
+	font-size:2em;
+	background-color:black;
+	width:30%;
+}
+p.scoring{
+		
+	font-size:2.5em;
+	color:yellow;
+	filter:brightness(150%);
+	display:inline;
+	text-align:center;
+	margin-bottom:20px;
+	background-color:black;
+}
+label{
+	color:white;
+	font-weight:bold;
+}
+#setcolor{
+	border:3px solid black;
+	background-color:orange;
+	width:250px;
+	color:#000000;
+	font-weight:bold;
+	font-size:1em;
+}
+footer{
+	text-align:center;
+	color:white;
+	background-color:grey;
+	margin-top: 100px;
+}
+header{
+	color: #00FFFF;
+	background-color:#000000;
+	text-align:center;
+	font-size:1.5em;
+}
+@media (max-width: 320px){
+	header{
+		font-size:1em;
+		width:1100px;
+	}
+	h1{
+		text-align:center;
+	}
+	.svgcontainer{
+		grid-column:1;
+		grid-row:2;
+	}
+	.controllers{
+		grid-column:1 /span 2;
+		grid-row:1;
+	}
+	ol{
+		color:lightblue;
+		background-color:black;
+		justify-content:center;
+		width:250%;
+	}
+	svg{
+		display:block;
+		margin-left:160px;
+		margin-top:20px;
+	}
+	.display{
+		margin-left:200px;
+	}
+	.instruction{
+		width:70%;
+	}
+	footer{
+		width:1100px;
+	}
+}
